@@ -101,5 +101,10 @@ def test(queries_number, weights_lists):
     print_result(all_instances, ideal_queries_count)
 
 
-test(10000, [[100, 200, 300, 500], [300, 100, 200]])
+test(10000, [[100, 200, 300, 500], [100, 200, 300]])
 
+# this test get queryset size and list of lists of weights
+# 1) distributes queries across instances
+# 2) reset weights
+# again Till the end
+# shows instances cache hit, distribution of queries across instances
